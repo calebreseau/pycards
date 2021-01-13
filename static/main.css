@@ -1,0 +1,39 @@
+.compteur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paquet{
+    position: relative;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.game{
+    width: auto;
+    display: block;
+    height: 100%;
+    padding:2%;
+    border: 5px solid;
+    border-radius: 5px;
+    background-color: #32a852;
+}
+
+html, body {
+    height: 100%;
+  }
+
+#paquets{
+    text-align: center;
+}
+
+#start{
+    width: auto;
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: black;
+}

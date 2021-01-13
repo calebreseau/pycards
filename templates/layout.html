@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>PyCards</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+  </head>
+  <body>
+        <a id='start' href="{{url_for('start')}}">Start game</a>
+        {%block content%}
+        {%endblock%}
+  </body>
+</html>

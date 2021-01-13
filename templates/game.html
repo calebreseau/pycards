@@ -1,0 +1,26 @@
+
+{%extends "layout.html"%}
+{% block content %}
+<div class='game'>
+
+  <div id='paquets'>
+    <a href="{{url_for('draw')}}">
+      <div class='paquet'>
+        <img src='/static/cards/PNG/Cards/cardBack_red5.png'/>
+        <div class='compteur'>{{compteur}}</div>
+      </div>
+    </a> 
+    <a href="{{url_for('vider')}}">
+      <div class="paquet">
+        <img src='/static/cards/PNG/Cards/cardBack_blue5.png'/>
+        <div class='compteur'>{{def_compteur}}</div>
+      </div>
+    </a>
+  </div>
+
+    <p id='defausse'></p>
+    {%for i in range(0,len)%}
+    <img src="/static/cards/PNG/Cards/{{defausse[i]}}"/>
+    {%endfor%}
+</div>
+{%endblock%}
