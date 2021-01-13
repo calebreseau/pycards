@@ -28,4 +28,4 @@ def vider():
     return render_template('game.html',defausse=res,compteur=str(len(jeu.terrain.paquet)),def_compteur=str(jeu.terrain.trash),len=len(jeu.terrain.defausse))
       
 
-app.run(debug=True)
+app.run(debug=False)
