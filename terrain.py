@@ -8,8 +8,8 @@ class Terrain:
         self.defausse = []
         self.paquet = []
         self.trash=0
-        for i in range(1,4):
-            for j in range(1,13):
+        for i in range(0,4):
+            for j in range(0,13):
                 self.paquet.append(Carte(j,i))
                 #print('Nouvelle carte: '+self.paquet[len(self.paquet)-1].toString())
         shuffle(self.paquet)
