@@ -21,7 +21,7 @@ class Terrain:
     def getDefausse(self):
         res=[]
         for carte in self.defausse:
-            res.append(carte.getTx())
+            res.append('<img src="/static/cards/PNG/Cards/'+carte.getTx()+'"/>')
         return res
 
     def viderDefausse(self):
