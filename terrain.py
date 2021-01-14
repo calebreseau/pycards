@@ -16,6 +16,7 @@ class Terrain:
 
     def tirer(self):
         self.defausse.append(self.paquet[0])
+        print(self.defausse[-1].toString())
         self.paquet.pop(0)
 
     def getDefausse(self):
