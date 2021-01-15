@@ -23,5 +23,3 @@ class jeuPurple(Jeu):
                 break
 
         return [str(self.score),''.join(self.terrain.getDefausse())]
-
-

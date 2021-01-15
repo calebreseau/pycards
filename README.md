@@ -23,13 +23,13 @@ Draw a card; returns raw data, used as an api (with ajax for example)
 
 Parent class for mods is **jeu.py**
 Game modes classes have two main functions (its advised to call super() function when overriding):
-* **\_\_init\_\_()**
+* **\_\_init\_\_(self)**
     Here you can define variables or consts specific to your mod.
     Most important here is the **self.controls** array, which defines the game controls.
     It's an list of lists; each sublist contains attributes for a button:
     * str:id
     * str:path to texture
-    * str:js on click function
+    * str:js on click function (for now; functions tirer (draws a card) and vider (empties the dump))
         * str:move(remember ?move parameter) if needed
     
     ### Example
@@ -39,3 +39,10 @@ Game modes classes have two main functions (its advised to call super() function
         ['paquet','/static/cards/PNG/Cards/cardBack_red5.png','tirer',''],
         ['trash','/static/cards/PNG/Cards/cardBack_blue5.png','vider']]
     ```
+
+* **update(self,str:moves)**
+    Main function, that is called on */draw/*.
+    *moves* is the content of the 4th attribute if the clicked button.
+    
+    This function should always return something like this: 
+        [String data,''.join(self.terrain.getDefausse())]
