@@ -8,5 +8,5 @@ With modding, it can play any cards game.
 
 ## Usage (*optional*)
 
-    *:**/pycards/***?game=<>*
-        Creates a new game (in free mode by default, else using specified mode)
+* **/pycards/***?game=<>*
+Creates a new game (in free mode by default, else using specified mode)
