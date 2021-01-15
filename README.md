@@ -1,4 +1,4 @@
-# pycards
+# pycards [Hosted on pythonanywhere](http://calebreseau.pythonanywhere.com/)
 
 ## Presentation
 
@@ -53,4 +53,7 @@ Game modes classes have two main functions (its advised to call super() function
     ```python
         [String data,''.join(self.terrain.getDefausse())]
     ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7adc4e276a0ece0f022fdc15dd1c74af06b9401f
