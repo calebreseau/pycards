@@ -23,7 +23,7 @@ Draw a card; returns raw data, used as an api (with ajax for example)
 
 Parent class for mods is **jeu.py**
 Game modes classes have two main functions (its advised to call super() function when overriding):
-### * **\_\_init\_\_(self)**
+* **\_\_init\_\_(self)**
     Here you can define variables or consts specific to your mod.
     Most important here is the **self.controls** array, which defines the game controls.
     It's an list of lists; each sublist contains attributes for a button:
@@ -40,7 +40,7 @@ Game modes classes have two main functions (its advised to call super() function
         ['trash','/static/cards/PNG/Cards/cardBack_blue5.png','vider']]
     ```
 
-### * **update(self,str:moves)**
+* **update(self,str:moves)**
     Main function, that is called on */draw/*.
     *moves* is the content of the 4th attribute if the clicked button.
     
