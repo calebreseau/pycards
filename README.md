@@ -25,6 +25,7 @@ Parent class for mods is **jeu.py**
 To create a mod named example, create the file jeuexample.py, contaning class jeuexample.
 Game modes classes have two main functions (its advised to call super() function when overriding):
 * **\_\_init\_\_(self)**
+
     Here you can define variables or consts specific to your mod.
     Most important here is the **self.controls** array, which defines the game controls.
     It's an list of lists; each sublist contains attributes for a button:
@@ -46,6 +47,7 @@ Game modes classes have two main functions (its advised to call super() function
     where *data* is the */draw/* raw response.
     
 * **update(self,str:moves)**
+
     Main function, that is called on */draw/*.
     *moves* is the content of the 4th attribute if the clicked button.
     
@@ -53,7 +55,4 @@ Game modes classes have two main functions (its advised to call super() function
     ```python
         [String data,''.join(self.terrain.getDefausse())]
     ```
-<<<<<<< HEAD
 
-=======
->>>>>>> 7adc4e276a0ece0f022fdc15dd1c74af06b9401f
