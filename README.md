@@ -32,3 +32,10 @@ Game modes classes have two main functions (its advised to call super() function
     * str:js on click function
         * str:move(remember ?move parameter) if needed
     
+    ### Example
+
+    ```python
+        self.controls=[
+        ['paquet','/static/cards/PNG/Cards/cardBack_red5.png','tirer',''],
+        ['trash','/static/cards/PNG/Cards/cardBack_blue5.png','vider']]
+    ```
