@@ -22,6 +22,7 @@ Draw a card; returns raw data, used as an api (with ajax for example)
 ## Modding
 
 Parent class for mods is **jeu.py**
+To create a mod named example, create the file jeuexample.py, contaning class jeuexample.
 Game modes classes have two main functions (its advised to call super() function when overriding):
 * **\_\_init\_\_(self)**
     Here you can define variables or consts specific to your mod.
@@ -40,6 +41,10 @@ Game modes classes have two main functions (its advised to call super() function
         ['trash','/static/cards/PNG/Cards/cardBack_blue5.png','vider']]
     ```
 
+    You can specify a JS script (in the /static/ dir) for your mod, using **self.script='filename.js'**
+    If you code a function **spec_update(data)** in here, it will be called at the end of **tirer()**,
+    where *data* is the */draw/* raw response.
+    
 * **update(self,str:moves)**
     Main function, that is called on */draw/*.
     *moves* is the content of the 4th attribute if the clicked button.
@@ -48,3 +53,4 @@ Game modes classes have two main functions (its advised to call super() function
     ```python
         [String data,''.join(self.terrain.getDefausse())]
     ```
+

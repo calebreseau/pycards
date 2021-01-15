@@ -25,7 +25,7 @@ def start():
     else:
         jeu=Jeu()
     res=''
-    return render_template('game.html',controls=jeu.controls,len=len(jeu.controls))
+    return render_template('game.html',controls=jeu.controls,len=len(jeu.controls),scripts=jeu.script)
 
         
 @app.route('/draw')

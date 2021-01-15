@@ -6,6 +6,7 @@ class jeuPurple(Jeu):
     def __init__(self):
         super().__init__()
         self.score=0
+        self.script='purple.js'
         self.controls=[
         ['rouge','/static/cards/PNG/Cards/cardBack_red5.png','tirer','0'],
         ['noir','/static/cards/PNG/Cards/cardBack_blue5.png','tirer','1'],

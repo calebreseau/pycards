@@ -4,6 +4,7 @@ class Jeu:
     def __init__(self):
         self.terrain = Terrain()
         self.end=False
+        self.script=''
         #self.script='refresh.js'
         self.controls=[
         ['paquet','/static/cards/PNG/Cards/cardBack_red5.png','tirer',''],

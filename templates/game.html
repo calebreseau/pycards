@@ -7,7 +7,7 @@
   <div id='paquets'>
     
     {%block scripts%}
-    {{scripts}}
+    <script src='/static/{{scripts}}'>Script not found !!</script>
     <script id='script'>    
     $(document).ready(function() {
 
@@ -16,11 +16,8 @@
             "move="+$(this).attr('move'),
             function(data, status){
               $('#defausse').html(data.split(',')[1]);
-              console.log($('#paquetcompteur').html());
               $('#paquetcompteur').html((parseInt($('#paquetcompteur').html())-1).toString());
-              var score=parseInt(data.split(',')[0]);
-              if (score==0) alert('Buvez '+$('#scorecompteur').html()+' gorgees')
-              $('#scorecompteur').html(parseInt(score+1));
+              spec_update(data)
   
           });
       }
