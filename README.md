@@ -45,4 +45,6 @@ Game modes classes have two main functions (its advised to call super() function
     *moves* is the content of the 4th attribute if the clicked button.
     
     This function should always return something like this: 
+    ```python
         [String data,''.join(self.terrain.getDefausse())]
+    ```
