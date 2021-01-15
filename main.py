@@ -14,6 +14,9 @@ def load_jeu(name):
     inst=_class()
     return inst
 
+@app.route('/')
+def index():
+    return redirect('/pycards/')
 @app.route('/pycards/')
 def start():
     global jeu
