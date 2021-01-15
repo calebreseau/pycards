@@ -9,7 +9,7 @@ class Carte:
         self.signe=signe
 
     def toString(self):
-        return GameConfig.cartes[self.valeur-1]+' de '+GameConfig.signes[self.signe-1]
+        return GameConfig.cartes[self.valeur]+' de '+GameConfig.signes[self.signe]
 
     def getTx(self):
         return 'card'+GameConfig.en_signes[self.signe]+GameConfig.en_cartes[self.valeur]+'.png'

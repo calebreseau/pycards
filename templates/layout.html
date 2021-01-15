@@ -5,7 +5,10 @@
       <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
   </head>
   <body>
-        <a id='start' href="{{url_for('start')}}">Start game</a>
+    <div id='menu'>
+      <a id='start' href="/pycards/">Mode libre</a>
+      <a id='purple' href="/pycards/?game=Purple">Purple</a>
+    </div>
         {%block content%}
         {%endblock%}
   </body>

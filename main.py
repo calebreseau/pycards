@@ -29,7 +29,7 @@ def start():
 def draw():
     global jeu
     res=jeu.update(request.args.get('move').split(','))
-    print(str(len(res)))
+    #print(str(len(res)))
     #print('response: '+'\r\n'.join(res))
     return res[0]+','+''.join(res[1])
 
